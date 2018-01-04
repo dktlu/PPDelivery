@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/layout_titlebar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        style="@style/match_wrap"
+        android:background="@color/white"
+        app:tabTextColor="@color/help_send_order_tab_txt"
+        app:tabIndicatorColor="@color/help_send_order_tab_txt_selected"
+        app:tabSelectedTextColor="@color/help_send_order_tab_txt_selected">
+
+    </android.support.design.widget.TabLayout>
+
+    <!--可滑动的布局内容-->
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="@dimen/x3"
+        android:id="@+id/viewPager"
+        android:background="@color/white"
+        style="@style/match_wrap"/>
+
+</LinearLayout>

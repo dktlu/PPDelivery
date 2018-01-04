@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_titlebar"
+        android:id="@id/titlebar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/ll_root"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x16"
+                android:src="@mipmap/ic_photo"
+                android:layout_marginBottom="@dimen/x16"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/x90">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="￥ 15.00"
+                    android:textColor="@color/color_f85800"
+                    android:textSize="@dimen/x28"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x30"
+                    android:background="@color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tv_cancel_order_rules"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="@string/cancel_order_rules"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x28"
+                    android:background="@color/color_5fabf9"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tv_go_pay"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="@string/go_pay"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x28"
+                    android:background="@color/login_blue_1A"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

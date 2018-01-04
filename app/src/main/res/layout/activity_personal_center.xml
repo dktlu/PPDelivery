@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x465"
+        android:background="@mipmap/bg_personal_top">
+
+        <ImageView
+            android:id="@+id/iv_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/x30"
+            android:src="@mipmap/ic_personal_back"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/x30"
+            android:src="@mipmap/ic_personal_message"/>
+
+        <ImageView
+            android:id="@+id/img_person_head"
+            android:layout_width="@dimen/x140"
+            android:layout_height="@dimen/x142"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x33"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_person_head"
+            android:layout_centerHorizontal="true"
+            android:drawableRight="@mipmap/ic_personal_edit_phone"
+            android:drawablePadding="@dimen/x11"
+            android:text="13254523656"
+            android:layout_marginTop="@dimen/x30"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/iv_level"
+            android:layout_width="@dimen/x236"
+            android:layout_height="@dimen/x46"
+            android:layout_below="@id/tv_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x24"
+            android:src="@mipmap/bg_courier_trainee"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_height="@dimen/x136">
+
+            <LinearLayout
+                android:id="@+id/ll_my_Balance"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="0.0元"
+                    style="@style/ww_color_white_size_30"/>
+
+                <TextView
+                    style="@style/ww_color_white_size_30"
+                    android:text="@string/my_balance"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="2"
+                    style="@style/ww_color_white_size_30"/>
+
+                <TextView
+                    style="@style/ww_color_white_size_30"
+                    android:text="@string/coupons"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="15"
+                    style="@style/ww_color_white_size_30"/>
+
+                <TextView
+                    style="@style/ww_color_white_size_30"
+                    android:text="@string/my_integral"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll_root"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

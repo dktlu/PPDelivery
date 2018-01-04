@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/layout_titlebar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x480"
+        android:background="@color/login_blue_1A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/x30"
+            android:textSize="@dimen/x24"
+            android:textColor="@color/white"
+            android:text="@string/commission"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/x30"
+            android:textSize="@dimen/x24"
+            android:drawablePadding="@dimen/x8"
+            android:text="@string/show_current_week_sz"
+            android:drawableRight="@mipmap/ic_right_arrow_white"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/x24"
+                android:textColor="@color/white"
+                android:text="@string/current_balance"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rmb_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/x24"
+                    android:textColor="@color/white"
+                    android:layout_alignBaseline="@+id/tv_balance"
+                    android:text="￥"/>
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/x90"
+                    android:layout_toRightOf="@id/rmb_tag"
+                    android:textColor="@color/white"
+                    android:text="848.25"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_withdrawals"
+                android:layout_width="@dimen/x160"
+                android:background="@drawable/shape_f85800_solid"
+                android:textSize="@dimen/x28"
+                android:textColor="@color/white"
+                android:text="@string/withdrawals"
+                android:layout_marginTop="@dimen/x20"
+                android:gravity="center"
+                android:layout_height="@dimen/x60"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_height="@dimen/x136">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="0.0元"
+                    style="@style/ww_color_white_size_30"/>
+
+                <TextView
+                    style="@style/ww_color_white_size_30"
+                    android:text="@string/cumulative_commission"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="2"
+                    style="@style/ww_color_white_size_30"/>
+
+                <TextView
+                    style="@style/ww_color_white_size_30"
+                    android:text="@string/has_withdrawals_commission"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="15"
+                    style="@style/ww_color_white_size_30"/>
+
+                <TextView
+                    style="@style/ww_color_white_size_30"
+                    android:text="@string/can_withdrawals_commission"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x26"
+        android:textColor="@color/pricing_rules_9c"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x26"
+        android:layout_marginBottom="@dimen/x14"
+        android:text="@string/income_and_expenses_detail"/>
+
+    <include
+        android:id="@+id/am_ptr_framelayout"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/ptr_recyclerview_uicomponent"/>
+
+    <TextView
+        android:id="@+id/btn_withdrawals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginBottom="@dimen/x20"
+        android:textSize="@dimen/x30"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_white_stroke_blue_solid"
+        android:gravity="center"
+        android:text="@string/withdrawals"
+        android:paddingBottom="@dimen/x30"
+        android:paddingTop="@dimen/x30"/>
+</LinearLayout>

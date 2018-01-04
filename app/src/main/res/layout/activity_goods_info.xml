@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/layout_titlebar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/x28"
+                android:layout_marginRight="@dimen/x28"
+                android:layout_marginTop="@dimen/x32"
+                android:layout_marginBottom="@dimen/x26"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="|"
+                    android:textColor="@color/login_blue_1A"
+                    android:textSize="@dimen/x28"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="物品类型"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:textColor="@color/login_gray_45"
+                    android:textSize="@dimen/x28"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <com.hncs.dktlh.ppdelivery.ui.custom.flowlayout.AutoFlowLayout
+                android:id="@+id/tag_layout"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                cube_ptr:columnNumbers="3"
+                cube_ptr:horizontalSpace="@dimen/x15"
+                cube_ptr:verticalSpace="@dimen/x13"
+                android:layout_height="@dimen/x350"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginTop="@dimen/x13"
+                android:background="@color/background"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_goodsinfo_photo"
+                android:textSize="@dimen/x28"
+                android:layout_marginTop="@dimen/x28"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:textColor="@color/login_gray_45"
+                android:textColorHint="@color/pricing_rules_9c"
+                android:background="@color/white"
+                android:lineSpacingExtra="@dimen/x4"/>
+
+            <com.hncs.dktlh.ppdelivery.ui.custom.camera.NinePhotoView
+                android:id="@+id/nine_photo_view"
+                android:layout_width="match_parent"
+                app:ninephoto_hspace="@dimen/x20"
+                app:ninephoto_vspace="@dimen/x20"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="@dimen/x135"
+                android:src="@mipmap/ic_photo"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x18"
+                android:layout_marginBottom="@dimen/x18"
+                android:layout_height="@dimen/x135"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/my_divider"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x18"
+                android:background="@color/background"/>
+
+            <LinearLayout
+                android:id="@+id/ll_root"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/x30"
+                android:layout_marginBottom="@dimen/x90"
+                android:textColor="@color/pricing_rules_9c"
+                android:text="@string/label_goodsinfo_save"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@mipmap/ic_goodsinfo_tips"
+                android:drawablePadding="@dimen/x12"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

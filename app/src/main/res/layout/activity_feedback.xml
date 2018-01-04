@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <!--<include-->
+        <!--android:id="@+id/titlebar"-->
+        <!--layout="@layout/layout_titlebar"/>-->
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:padding="@dimen/x32"
+        android:hint="@string/hint_input_feedback"
+        android:layout_height="@dimen/x600"/>
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x70"
+        android:layout_marginRight="@dimen/x70"
+        android:layout_marginTop="@dimen/x100"
+        android:padding="@dimen/x30"
+        android:gravity="center"
+        android:background="@drawable/btn_login_gray_blue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x30"
+        android:text="@string/submit"/>
+
+</LinearLayout>

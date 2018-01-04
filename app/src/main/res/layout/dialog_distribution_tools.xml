@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/common_dialog_top"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <com.hncs.dktlh.ppdelivery.ui.custom.PickValueView
+        android:id="@+id/picker_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.hncs.dktlh.ppdelivery.ui.custom.PickValueView>
+</LinearLayout>

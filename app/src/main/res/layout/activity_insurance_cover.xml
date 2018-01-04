@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/layout_titlebar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/color_9097a7"
+                android:layout_height="@dimen/x240">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/today_insurance_status"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@mipmap/ic_today_insurance_status"
+                    android:drawablePadding="@dimen/x8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x26"
+                    android:textSize="@dimen/x24"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_insurance_record"
+                    android:layout_width="wrap_content"
+                    android:text="@string/insurance_record"
+                    android:textColor="@color/white"
+                    android:drawableRight="@mipmap/ic_insurance_white_right_arrow"
+                    android:drawablePadding="@dimen/x8"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_marginTop="@dimen/x26"
+                    android:textSize="@dimen/x24"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/x40"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/x56"
+                    android:layout_marginLeft="@dimen/x65"
+                    android:text="@string/uninsured"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_marginBottom="@dimen/x30"
+                    android:src="@mipmap/ic_uninsured"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/login_gray_45"
+                    android:textSize="@dimen/x26"
+                    android:text="@string/insurance_desc"
+                    android:drawableLeft="@mipmap/ic_insurance_question_mark"
+                    android:drawablePadding="@dimen/x8"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_height="@dimen/x90"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:background="@color/my_divider"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/insurance_scope_application"
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/login_blue_1A"
+                    android:layout_margin="@dimen/x30"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/insurance_txt_1"
+                    android:textSize="@dimen/x26"
+                    android:textColor="@color/login_gray_45"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/x26"
+                    android:text="@string/insurance_age_range"
+                    android:layout_marginTop="@dimen/x44"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginBottom="@dimen/x30"
+                    android:textColor="@color/login_blue_1A"/>
+
+                <TableLayout
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_width="match_parent"
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="beginning|middle|end"
+                    android:background="@color/color_f5"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:divider="@drawable/table_divider"
+                        android:showDividers="beginning|middle|end"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/x80"
+                            android:textSize="@dimen/x26"
+                            android:text="@string/insurance_order_status"
+                            android:gravity="center"
+                            android:textColor="@color/login_gray_45"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/x80"
+                            android:textSize="@dimen/x26"
+                            android:text="@string/case_time"
+                            android:gravity="center"
+                            android:textColor="@color/login_gray_45"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:divider="@drawable/table_divider"
+                        android:showDividers="beginning|middle|end"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/x80"
+                            android:textSize="@dimen/x26"
+                            android:text="@string/insurance_order_status_1"
+                            android:gravity="center"
+                            android:textColor="@color/login_blue_1A"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/x80"
+                            android:textSize="@dimen/x26"
+                            android:text="@string/case_time_1"
+                            android:gravity="center"
+                            android:textColor="@color/login_blue_1A"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_marginTop="@dimen/x22"
+                    android:textSize="@dimen/x26"
+                    android:textColor="@color/login_gray_45"
+                    android:text="@string/insurance_desc_1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_marginTop="@dimen/x45"
+                    android:layout_marginBottom="@dimen/x22"
+                    android:textSize="@dimen/x26"
+                    android:textColor="@color/login_gray_45"
+                    android:text="@string/insurance_desc_2"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:background="@color/my_divider"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginTop="@dimen/x18"
+                android:background="@color/my_divider"/>
+
+            <TextView
+                android:id="@+id/tv_compensate_desc"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/login_gray_45"
+                android:text="@string/compensate_desc"
+                android:textSize="@dimen/x26"
+                android:paddingLeft="@dimen/x30"
+                android:background="@color/white"
+                android:paddingRight="@dimen/x30"
+                android:drawableRight="@mipmap/ic_index_right_arrow"
+                android:layout_height="@dimen/x88"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/my_divider"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="2元/天 投保"
+                android:textSize="@dimen/x26"
+                android:layout_marginTop="@dimen/x15"
+                android:gravity="center"
+                android:background="@color/login_blue_1A"
+                android:textColor="@color/white"
+                android:layout_height="@dimen/x88"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

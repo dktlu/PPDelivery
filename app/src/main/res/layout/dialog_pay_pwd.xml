@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_marginLeft="@dimen/x58"
+              android:layout_marginRight="@dimen/x58"
+              android:background="@drawable/shape_item_white_solid"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/x22"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/input_pay_pwd"
+            android:textSize="@dimen/x28"
+            android:textColor="@color/gray_333"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_set_pwd"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/x28"
+            android:textColor="@color/login_blue_1A"
+            android:text="@string/set_pwd"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:background="@color/my_divider"/>
+    
+    <com.hncs.dktlh.ppdelivery.ui.custom.PswInputView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x160"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/gray_333"
+            android:textSize="@dimen/x28"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="wrap_content"
+            android:background="@color/my_divider"/>
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/login_blue_1A"
+            android:textSize="@dimen/x28"
+            android:text="@string/sure"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

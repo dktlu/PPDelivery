@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/common_dialog_top"/>
+
+    <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/x26"
+            android:layout_marginRight="@dimen/x26"
+            android:layout_marginTop="@dimen/x35"
+            android:layout_marginBottom="@dimen/x35"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_five_rmb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dialog_addprice"
+            android:textSize="@dimen/x28"
+            android:button="@null"
+            android:checked="true"
+            android:text="@string/five_rmb"
+            android:gravity="center"
+            android:textColor="@drawable/selector_txt_gray45_white"
+            android:layout_marginLeft="@dimen/x4"
+            android:layout_marginRight="@dimen/x4"
+            android:layout_height="@dimen/x65"/>
+
+        <RadioButton
+            android:id="@+id/rb_fifteen_rmb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dialog_addprice"
+            android:textSize="@dimen/x28"
+            android:button="@null"
+            android:text="@string/fifteen_rmb"
+            android:gravity="center"
+            android:textColor="@drawable/selector_txt_gray45_white"
+            android:layout_marginLeft="@dimen/x4"
+            android:layout_marginRight="@dimen/x4"
+            android:layout_height="@dimen/x65"/>
+
+        <RadioButton
+            android:id="@+id/rb_twenty_five"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dialog_addprice"
+            android:textSize="@dimen/x28"
+            android:button="@null"
+            android:text="@string/twenty_five"
+            android:gravity="center"
+            android:textColor="@drawable/selector_txt_gray45_white"
+            android:layout_marginLeft="@dimen/x4"
+            android:layout_marginRight="@dimen/x4"
+            android:layout_height="@dimen/x65"/>
+
+        <RadioButton
+            android:id="@+id/rb_other"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dialog_addprice"
+            android:textSize="@dimen/x28"
+            android:button="@null"
+            android:text="@string/other"
+            android:gravity="center"
+            android:textColor="@color/pricing_rules_9c"
+            android:layout_marginLeft="@dimen/x4"
+            android:layout_marginRight="@dimen/x4"
+            android:layout_height="@dimen/x65"/>
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rl_rmb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:visibility="gone"
+        android:layout_margin="@dimen/x30"
+        android:background="@drawable/shape_gray_stroke">
+
+        <TextView
+            android:id="@+id/tv_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/login_gray_45"
+            android:textSize="@dimen/x28"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x14"
+            android:text="元"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_rmb"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:textColorHint="@color/pricing_rules_9c"
+            android:textSize="@dimen/x28"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginRight="@dimen/x24"
+            android:textColor="@color/login_gray_45"
+            android:lines="1"
+            android:maxLines="1"
+            android:inputType="number"
+            android:hint="@string/hint_input_rmb"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x88"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginBottom="@dimen/x40"
+        android:gravity="center"
+        android:background="@drawable/btn_login_gray_blue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x30"
+        android:text="@string/sure"/>
+
+</LinearLayout>

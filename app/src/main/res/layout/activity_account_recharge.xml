@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/layout_titlebar"/>
+
+    <View
+        style="@style/divider_height_1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x34"
+                    android:layout_marginBottom="@dimen/x38"
+                    android:text="@string/current_account"
+                    style="@style/ww_txt_color_gray45_size_28"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="@string/select_recharge"
+                    style="@style/ww_txt_color_gray45_size_28"/>
+
+                <com.hncs.dktlh.ppdelivery.ui.custom.flowlayout.AutoFlowLayout
+                    android:id="@+id/tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_marginTop="@dimen/x26"
+                    android:layout_marginBottom="@dimen/x26"
+                    cube_ptr:columnNumbers="4"
+                    cube_ptr:horizontalSpace="@dimen/x11"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    style="@style/divider_height_1_marginLeft_30"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x30"
+                    android:background="@color/white"
+                    android:layout_height="@dimen/x90">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/other_price"
+                        style="@style/ww_txt_color_gray45_size_28"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:textColorHint="@color/color_gray_ad"
+                        android:textColor="@color/login_gray_45"
+                        android:textSize="@dimen/x28"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_input_recharge_price"
+                        android:background="@color/white"
+                        android:paddingRight="@dimen/x30"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider_height_1"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/x30"
+                style="@style/ww_txt_color_gray45_size_28"
+                android:layout_marginTop="@dimen/x38"
+                android:layout_marginBottom="@dimen/x20"
+                android:text="@string/select_recharge_mode"/>
+
+            <View
+                style="@style/divider_height_1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x30"
+                    android:layout_height="@dimen/x110">
+
+                    <ImageView
+                        android:layout_width="@dimen/x65"
+                        android:src="@mipmap/ic_pay_mode_wechat"
+                        android:layout_height="@dimen/x65"/>
+
+                    <TextView
+                        style="@style/ww_txt_color_gray45_size_28"
+                        android:text="@string/title_pay_with_wechat"
+                        android:layout_marginLeft="@dimen/x40"
+                        android:layout_weight="1"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:background="@drawable/selector_registration"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginLeft="@dimen/x135"
+                    style="@style/divider_height_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x30"
+                    android:layout_height="@dimen/x110">
+
+                    <ImageView
+                        android:layout_width="@dimen/x65"
+                        android:src="@mipmap/ic_pay_mode_zfb"
+                        android:layout_height="@dimen/x65"/>
+
+                    <TextView
+                        style="@style/ww_txt_color_gray45_size_28"
+                        android:text="@string/title_pay_with_zfb"
+                        android:layout_marginLeft="@dimen/x40"
+                        android:layout_weight="1"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:background="@drawable/selector_registration"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginLeft="@dimen/x135"
+                    style="@style/divider_height_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingRight="@dimen/x30"
+                    android:layout_height="@dimen/x110">
+
+                    <ImageView
+                        android:layout_width="@dimen/x65"
+                        android:src="@mipmap/ic_withdrawals_bank"
+                        android:layout_height="@dimen/x65"/>
+
+                    <TextView
+                        style="@style/ww_txt_color_gray45_size_28"
+                        android:text="@string/title_pay_with_bank"
+                        android:layout_marginLeft="@dimen/x40"
+                        android:layout_weight="1"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:background="@drawable/selector_registration"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/divider_height_1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/x30"
+                android:textSize="@dimen/x28"
+                android:textColor="@color/pricing_rules_9c"
+                android:drawableLeft="@mipmap/ic_gray_tips"
+                android:drawablePadding="@dimen/x9"
+                android:text="@string/remark_recharge"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                style="@style/ww_color_white_size_30"
+                android:layout_height="@dimen/x88"
+                android:background="@drawable/shape_blue_solid"
+                android:gravity="center"
+                android:text="@string/submit_applications"
+                android:id="@+id/tv_submit"
+                android:layout_margin="@dimen/x30"
+                android:layout_width="match_parent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

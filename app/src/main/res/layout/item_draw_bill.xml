@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x12"
+        android:background="@color/background"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_height="@dimen/x88">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/x24"
+            android:textColor="@color/pricing_rules_9c"
+            android:text="2017-11-25 12:32:44"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/x24"
+            android:textColor="@color/pricing_rules_9c"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="可开发票金额"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x28"
+        android:layout_marginBottom="@dimen/x28"
+        android:drawablePadding="@dimen/x37"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/ic_take"
+        android:text="绿地中心(湖南省长沙市开福区芙蓉中路)"
+        android:textSize="@dimen/x26"
+        android:textColor="@color/login_gray_45"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginBottom="@dimen/x32"
+        android:drawablePadding="@dimen/x37"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/ic_send"
+        android:text="绿地中心(湖南省长沙市开福区芙蓉中路)"
+        android:textSize="@dimen/x26"
+        android:textColor="@color/login_gray_45"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+</LinearLayout>
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center_horizontal"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bg_draw_bill_success"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_marginTop="@dimen/x36"
+        style="@style/ww_txt_color_gray45_size_30"/>
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pricing_rules_9c"
+        android:textSize="@dimen/x26"
+        android:layout_width="wrap_content"/>
+</LinearLayout>

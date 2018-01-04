@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dsm"
+                android:layout_width="wrap_content"
+                android:text="@string/order_status_dsm"
+                android:textColor="@color/login_gray_45"
+                android:textSize="@dimen/x28"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/x88"/>
+
+            <ImageView
+                android:id="@+id/iv_dsm"
+                android:src="@mipmap/ic_order_status_checked"
+                android:layout_toRightOf="@id/tv_dsm"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/x60"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/my_divider"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginLeft="@dimen/x30"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dqh"
+                android:layout_width="wrap_content"
+                android:text="@string/order_status_dqh"
+                android:textColor="@color/login_gray_45"
+                android:textSize="@dimen/x28"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/x88"/>
+
+            <ImageView
+                android:id="@+id/iv_dqh"
+                android:visibility="gone"
+                android:src="@mipmap/ic_order_status_checked"
+                android:layout_toRightOf="@id/tv_dqh"
+                android:layout_marginLeft="@dimen/x60"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/my_divider"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginLeft="@dimen/x30"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_ddyc"
+                android:layout_width="wrap_content"
+                android:text="@string/order_status_ddyc"
+                android:textColor="@color/login_gray_45"
+                android:textSize="@dimen/x28"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/x88"/>
+
+            <ImageView
+                android:id="@+id/iv_ddyc"
+                android:visibility="gone"
+                android:src="@mipmap/ic_order_status_checked"
+                android:layout_toRightOf="@id/tv_ddyc"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/x60"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/my_divider"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginLeft="@dimen/x30"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_ywc"
+                android:layout_width="wrap_content"
+                android:text="@string/order_status_ywc"
+                android:textColor="@color/login_gray_45"
+                android:textSize="@dimen/x28"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/x88"/>
+
+            <ImageView
+                android:id="@+id/iv_ywc"
+                android:visibility="gone"
+                android:src="@mipmap/ic_order_status_checked"
+                android:layout_toRightOf="@id/tv_ywc"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/x60"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:text="@string/cancel"
+        android:textColor="@color/login_gray_45"
+        android:textSize="@dimen/x28"
+        android:layout_marginTop="@dimen/x30"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x88"/>
+
+</LinearLayout>

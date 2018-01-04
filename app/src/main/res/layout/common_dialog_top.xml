@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="@dimen/x88">
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/x28"
+        android:textColor="@color/pricing_rules_9c"
+        android:text="@string/cancel"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/x28"
+        android:textColor="@color/login_blue_1A"
+        android:text="@string/sure"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/x28"
+        android:textColor="@color/login_gray_45"
+        android:layout_toLeftOf="@id/tv_sure"
+        android:layout_toRightOf="@id/tv_cancel"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/distribution_mode"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

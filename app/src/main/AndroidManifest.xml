@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.hncs.dktlh.ppdelivery">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".base.BaseActivity">
+        </activity>
+        <activity android:name=".ui.activity.main.Main1Activity">
+        </activity>
+        <activity android:name=".ui.activity.main.MainActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.PersonalCenterActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.bill.HelpSendOrder.HelpSendOrderActivity">
+        </activity>
+        <activity android:name=".ui.activity.login.LoginActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.faq.FAQActivity">
+        </activity>
+        <activity android:name=".ui.activity.main.PricingRulesActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.myinfo.MyInfosActivity">
+        </activity>
+        <activity android:name=".ui.activity.login.RegisterActivity">
+        </activity>
+        <activity android:name=".ui.activity.main.message.MessageCenterActivity">
+        </activity>
+        <activity android:name=".ui.activity.main.message.SystemMessageActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.coupon.CouponActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.feedback.FeedbackActivity">
+        </activity>
+        <activity android:name=".ui.activity.main.goodsinfo.GoodsInfoActivity">
+        </activity>
+        <activity android:name=".ui.activity.login.RegistrationClauseActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.setting.SettingActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.setting.ChangePwdActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.bill.DispatchActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.bill.MyBillActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.balance.AccountBalanceActivity">
+        </activity>
+        <activity android:name=".ui.activity.main.order.SureOrderActivity">
+        </activity>
+        <activity android:name=".ui.activity.main.order.CertificationActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.insurance.InsuranceCoverActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.insurance.InsuranceServiceActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.courier.ApplyCourierActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.bill.OrderDetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.balance.drawbill.DrawBillActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.myinfo.sincerity.MySincerityActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.insurance.InsuranceRecordActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.balance.WithdrawalsActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.balance.drawbill.NoticeActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.balance.drawbill.DrawBillDetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.courier.Section2Activity">
+        </activity>
+        <activity android:name=".ui.activity.personal.balance.drawbill.DrawBillStatusActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.balance.AccountRechargeActivity">
+        </activity>
+        <activity android:name=".ui.activity.personal.bill.AbnormalDeclarationActivity">
+        </activity>
+    </application>
+
+</manifest>

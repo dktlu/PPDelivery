@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/common_dialog_top"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_rmb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:visibility="visible"
+        android:layout_margin="@dimen/x30"
+        android:background="@drawable/shape_gray_stroke">
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/login_gray_45"
+            android:textSize="@dimen/x28"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x14"
+            android:text="元"/>
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_unit"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:textColorHint="@color/pricing_rules_9c"
+            android:textSize="@dimen/x28"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginRight="@dimen/x24"
+            android:textColor="@color/login_gray_45"
+            android:lines="1"
+            android:maxLines="1"
+            android:inputType="number"
+            android:hint="@string/hint_input_weight"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x88"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginBottom="@dimen/x40"
+        android:gravity="center"
+        android:background="@drawable/btn_login_gray_blue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x30"
+        android:text="@string/sure"/>
+
+</LinearLayout>

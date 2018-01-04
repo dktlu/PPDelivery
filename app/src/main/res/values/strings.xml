@@ -1,0 +1,303 @@
+<resources>
+    <string name="app_name">PPDelivery</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="back">返回</string>
+    <string name="distribution_mode">配送方式</string>
+    <string name="five_rmb">5元</string>
+    <string name="fifteen_rmb">10元</string>
+    <string name="twenty_five">25元</string>
+    <string name="other">其他</string>
+    <string name="hint_input_rmb">请输入金额</string>
+    <string name="hint_input_weight">请输入物品重量</string>
+    <string name="hint_input_value">请输入物品价值</string>
+    <string name="thanks_rmb">感谢费</string>
+    <string name="hint_goodsinfo_photo">可通过拍照对物品信息进行补充，避免配送过程中产生不必要的纠纷</string>
+    <string name="label_goodsinfo_save">为了您的合法权益，请确认物品信息是否属实</string>
+    <string name="googds_weight">物品重量</string>
+    <string name="googds_value">物品价值</string>
+    <string name="distribution_tools">配送工具</string>
+    <string name="please_selected">请选择</string>
+    <string name="weight_jin">斤</string>
+    <string name="camera">拍照</string>
+    <string name="album">从手机相册选择</string>
+
+    <!--确认订单-->
+    <string name="sure_order">确认订单</string>
+    <string name="delivery_address">发货地址</string>
+    <string name="receiving_address">收获地址</string>
+    <string name="goods_mode">物品类型</string>
+    <string name="running_leg_fee">跑腿费</string>
+    <string name="add_tips">加小费</string>
+    <string name="hint_add_tips">小费到位，服务当然更好</string>
+    <string name="hint_coupons">暂无优惠券可用</string>
+    <string name="certification">实名认证</string>
+    <string name="remarks">备注说明</string>
+    <string name="hint_remarks">请填写备注，如易碎品，勿摔</string>
+    <string name="cancel_order_rules">取消订单规则</string>
+    <string name="go_pay">去支付</string>
+    <string name="title_balance_pay">余额支付</string>
+    <string name="title_pay_with_ywt">一网通银行卡支付</string>
+    <string name="title_pay_with_wechat">微信支付</string>
+    <string name="title_pay_with_zfb">支付宝支付</string>
+    <string name="select_pay_mode">请选择支付方式</string>
+    <string name="set_pwd">设置密码</string>
+    <string name="input_pay_pwd">输入支付密码</string>
+    <string name="account_recharge">账户充值</string>
+    <string name="current_account">当前账户：</string>
+    <string name="select_recharge">选择充值...</string>
+    <string name="other_price">其他金额</string>
+    <string name="hint_input_recharge_price">请输入充值金额</string>
+    <string name="title_pay_with_bank">银行卡支付</string>
+    <string name="remark_recharge">充值金额只用于平台消费，不可提现</string>
+    <string name="select_recharge_mode">请选择充值方式</string>
+
+    <!--实名认证-->
+    <string name="submit_info">提交资料</string>
+    <string name="not_pass_hint">：很遗憾，您的自由快递人申请未通过(身份证正面照显示不完 整，请重拍)！如有疑问请联系在线客服</string>
+    <string name="location_city">您所在的城市：</string>
+    <string name="hint_select_ssq">请选择省市区</string>
+    <string name="real_name">真实姓名：</string>
+    <string name="hint_input_real_name">请输入真实姓名</string>
+    <string name="id_card_no">身份证号码：</string>
+    <string name="hint_input_idcard">请输入身份证号码</string>
+    <string name="please_follow_example">请按照示例</string>
+    <string name="distribution_vehicle">配送交通工具：</string>
+    <string name="hint_select_vehicle">请选择交通工具</string>
+    <string name="hint_contact_input_realname">请输入真实姓名，如：张三</string>
+    <string name="emergency_contact">紧急联系人：</string>
+    <string name="contact_phone">联系人号码：</string>
+    <string name="hint_input_contact_phone">请输入联系人手机号码</string>
+    <string name="inviter">邀请人：</string>
+    <string name="hint_inviter">邀请码或邀请人手机号</string>
+    <string name="optional">以下内容为选填项</string>
+    <string name="xinghao">*</string>
+    <string name="hint_idcard_front">点击拍照\n身份证正面照</string>
+    <string name="hint_idcard_back">点击拍照\n身份证背面照</string>
+    <string name="hint_sbs">点击拍照\n上半身正面照</string>
+    <string name="hint_sc_idcard">点击拍照\n手持身份证照</string>
+    <string name="submit_atonce">立即提交</string>
+
+    <!--个人中心-->
+    <string name="my_balance">我的余额</string>
+    <string name="account_balance">账户余额</string>
+    <string name="coupons">优惠券</string>
+    <string name="my_integral">我的积分</string>
+    <string name="my_order">我的发单</string>
+    <string name="my_send_single">我的派单</string>
+    <string name="my_dispatch_order">我的送货订单</string>
+    <string name="apply_for_courier">申请成为快递员</string>
+    <string name="contact_customer_service">联系客服</string>
+    <string name="faq">常见问题</string>
+    <string name="setting">设置</string>
+    <string name="my_insurance">我的投保险</string>
+    <string name="chat">聊天</string>
+    <string name="feedback">意见反馈</string>
+    <string name="hint_input_feedback">请输入您的宝贵意见...</string>
+    <string name="submit">提交</string>
+    <string name="set_new_pwd">设置新密码</string>
+    <string name="hint_input_old_pwd">请输入原登陆密码</string>
+    <string name="hint_new_pwd">设置新密码</string>
+    <string name="hint_sure_new_pwd">确认新密码</string>
+    <string name="complete_update">完成修改</string>
+    <string name="draw_bill">开发票</string>
+    <string name="commission">佣金</string>
+    <string name="withdrawals">提现</string>
+    <string name="income_and_expenses_detail">收支明细</string>
+    <string name="show_current_week_sz">查看本周收支</string>
+    <string name="current_balance">当前余额</string>
+    <string name="cumulative_commission">累计佣金</string>
+    <string name="has_withdrawals_commission">已提佣金</string>
+    <string name="can_withdrawals_commission">可提佣金</string>
+    <string name="total_commission">总佣金</string>
+    <string name="already_withdrawals">已提现</string>
+    <string name="name">姓名</string>
+    <string name="withdrawals_zfb">支付宝提现</string>
+    <string name="zfb_name">支付宝名称</string>
+    <string name="zfb_account">支付宝账号</string>
+    <string name="withdrawals_bank">银行卡提现</string>
+    <string name="bank_name">银行名称</string>
+    <string name="bank_address">开户行地址</string>
+    <string name="bank_account">银行卡号</string>
+    <string name="can_withdrawals_balance">可提现余额</string>
+    <string name="withdrawals_tips">提现时间会在1-2个工作日转到您账户请注意查收</string>
+
+    <!--开发票-->
+    <string name="can_draw_bill_order">可开发票订单</string>
+    <string name="history_draw_bill">历史订单</string>
+    <string name="tips_draw_bill">系统暂不受理￥9999.99以上的申请</string>
+    <string name="next">下一步</string>
+    <string name="drawbill_details">开票详情</string>
+    <string name="select_bill">选择发票</string>
+    <string name="personal_bill">个人发票</string>
+    <string name="bill_mode">发票类型</string>
+    <string name="electronic_invoice">电子发票</string>
+    <string name="bill_content">发票内容</string>
+    <string name="info_service_fee">信息服务费</string>
+    <string name="bill_price">发票金额</string>
+    <string name="company_rise">企业抬头</string>
+    <string name="hint_input_company_rise">请输入正确的企业抬头</string>
+    <string name="taxpayer_identification_number">纳税人识别号</string>
+    <string name="hint_input_nsrsbh">输入纳税人识别号</string>
+    <string name="enterprise_credit_code">企业信用代码</string>
+    <string name="more_info">更多信息</string>
+    <string name="hint_more_info">填写购买、备注、收款人等</string>
+    <string name="receiving_info">收件信息</string>
+    <string name="email">电子邮件</string>
+    <string name="hint_input_email">请输入接收电子单的邮箱</string>
+    <string name="notice_consignee">通知收货人</string>
+    <string name="personal_name">个人姓名</string>
+    <string name="hint_input_personal_name">请输入发票上的个人姓名</string>
+    <string name="note_description">备注说明</string>
+    <string name="draw_bill_desc">开票说明</string>
+    <string name="hint_input_note_desc">请填写备注说明</string>
+    <string name="submit_applications">提交申请</string>
+    <string name="order_no">订单号</string>
+    <string name="pickup_code">取件码</string>
+    <string name="send_message">发送短信</string>
+
+    <!--申请成为快递人-->
+    <string name="apply_courier">成为自由快递人</string>
+    <string name="go_submit">去提交</string>
+    <string name="study_online">在线学习考试</string>
+    <string name="section_1">第一节</string>
+    <string name="section_2">第二节</string>
+    <string name="section_3">第三节</string>
+    <string name="section1_title">自由快递人精神</string>
+    <string name="section2_title">操作技能和服务规范</string>
+    <string name="section3_title">特殊物品配送攻略</string>
+    <string name="study">学习</string>
+    <string name="unopened">未开启</string>
+    <string name="pass_the_exam">审核和考试通过可接单</string>
+
+    <!--评价-->
+    <string name="evaluate_consignor">对发货人的评价</string>
+    <string name="evaluate_consignee">对收货人的评价</string>
+    <string name="evaluate_tag">印象标签</string>
+
+    <!--保险保障-->
+    <string name="insurance_cover">保险保障</string>
+    <string name="today_insurance_status">今日保险状态</string>
+    <string name="insurance_record">投保记录</string>
+    <string name="uninsured">未投保</string>
+    <string name="insured">已投保</string>
+    <string name="insurance_desc">保险说明</string>
+    <string name="insurance_scope_application">| 承保适用范围</string>
+    <string name="insurance_txt_1">通过四川创物科技有限公司网络平台接单的只有快递人，在服务过程中发生意外伤害事故及个人责任事故</string>
+    <string name="insurance_age_range">●本保险只承担年龄在0-60岁被保险人</string>
+    <string name="insurance_order_status">受保订单状态</string>
+    <string name="insurance_order_status_1">派送中+代签收状态</string>
+    <string name="case_time">报案受理时间</string>
+    <string name="case_time_1">货损后24小时内</string>
+    <string name="insurance_desc_1">*配送途中出现货损、遗失，自由快递人需要配合平台全额赔付，平台核实后报保险\n当配送途中出现货损/遗失/人身伤害时，只有快递人报保险需准备的相关资料</string>
+    <string name="insurance_desc_2">如果意购保险，接单过程中发生意外，涉及赔偿请联系在线客服</string>
+    <string name="compensate_desc">赔付说明</string>
+    <string name="insurance_service">保险服务</string>
+    <string name="insurance_service_title">1.意外伤害保险，理赔材料只有快递人需准备并邮递的资料：</string>
+    <string name="insurance_service_content">彼时，国家级贫困县卢氏，正因56年坚守土坯房县委大院受到媒体关注。被问及为何不盖新楼，王战方义正辞严，“如果民生问题不解决，我们的发展问题不解决，盖一栋办公楼又能解决得了什么？”</string>
+    <string name="insurance_success">投保成功</string>
+
+    <!--设置-->
+    <string name="setting_aboutus">关于人人快递</string>
+    <string name="setting_sound_remind">声音提醒</string>
+    <string name="setting_shock_remind">震动提醒</string>
+    <string name="setting_voice_remind">语音提醒</string>
+    <string name="setting_version">版本更新</string>
+    <string name="setting_change_pwd">修改密码</string>
+
+    <string name="my_infos">我的资料</string>
+    <string name="my_change_head">更换头像</string>
+    <string name="my_nickname">昵称</string>
+    <string name="my_phone">电话号码</string>
+    <string name="my_sincerity_level">诚信等级</string>
+    <string name="my_sincerity">我的诚信</string>
+    <string name="sincerity_rules">诚信规则</string>
+    <string name="current_sincerity">当前诚信</string>
+    <string name="complete_order_evaluate">完成订单评价</string>
+
+    <!--帮送订单-->
+    <string name="help_send_order">帮送订单</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="order_status">订单状态</string>
+    <string name="trajectory_tracking">轨迹跟踪</string>
+    <string name="order_detail">订单详情</string>
+    <string name="show_abnormal">查看异常</string>
+    <string name="publicsh_order_success">发单成功</string>
+    <string name="again_one_order">再来一单</string>
+    <string name="share_get_red_packet">分享领红包</string>
+    <string name="abnormal_declaration">异常申报</string>
+    <string name="look">查看</string>
+    <string name="reason">理由：</string>
+    <string name="next_delivery_time">下次送货时间：</string>
+    <string name="report_reason">上报原因：</string>
+    <string name="solution_with_custom_service">客服解决方案：</string>
+
+    <!--登陆注册-->
+    <string name="login">登录</string>
+    <string name="registration">注册</string>
+    <string name="get_code">获取验证码</string>
+    <string name="quick_login">快速登录</string>
+    <string name="login_by_password">密码登录</string>
+    <string name="hint_input_phone">请输入手机号码</string>
+    <string name="hint_input_code">请输入验证码</string>
+    <string name="hint_input_pwd">请输入密码</string>
+    <string name="hint_inviter_phone">请输入邀请人手机号(非必填)</string>
+    <string name="label_registration_agreement">我已阅读并同意《注册服务条款》</string>
+    <string name="registration_clause">注册服务条款</string>
+    <string name="registration_clause_title">注册会员服务条款</string>
+    <string name="registration_clause_content">彼时，国家级贫困县卢氏，正因56年坚守土坯房县委大院受到媒体关注。被问及为何不盖新楼，王战方义正辞严，“如果民生问题不解决，我们的发展问题不解决，盖一栋办公楼又能解决得了什么？”</string>
+
+    <!--主页-->
+    <string name="send_express">发快递</string>
+    <string name="find_express">找快递</string>
+    <string name="the_city">同城</string>
+    <string name="other_city">异地</string>
+    <string name="send_the_city">发同城</string>
+    <string name="send_other_city">发异地</string>
+    <string name="hint_consignor_address">请选择发货人地址</string>
+    <string name="hint_consignee_address">请选择收货人地址</string>
+    <string name="pickup_goods_time">取货时间</string>
+    <string name="latest_arrival_time">最晚到达时间</string>
+    <string name="goods_info">物品信息</string>
+    <string name="delivery_mode">送货方式</string>
+    <string name="pricing_rules">计价规则详情</string>
+    <string name="display_pricing_rules">查看计价规则</string>
+    <string name="display_delivery_rules">查看送货规则</string>
+    <string name="increase_price">我要加价</string>
+    <string name="place_an_order">去下单</string>
+
+    <!--消息中心-->
+    <string name="txt_message_center">消息中心</string>
+    <string name="txt_system_message">系统消息</string>
+
+    <!--计价规则-->
+    <string name="standard_distribution_fee">标准配送费</string>
+    <string name="bzpsf_type_1">0~2公里：￥1</string>
+    <string name="bzpsf_type_2">2~100公里：￥2/公里</string>
+    <string name="weight_goods">物品重量</string>
+    <string name="weight_goods_type_1">0~10公斤：￥0/公斤</string>
+    <string name="weight_goods_type_2">10~100公斤：￥2/公斤</string>
+    <string name="wpjz">物品价值</string>
+    <string name="wpjz_type_1">0~1000元：加收物品价值的0%</string>
+    <string name="wpjz_type_2">1000~5000元：加收物品价值的0.1%</string>
+    <string name="jtgj">交通工具</string>
+    <string name="jtgj_type_1">电瓶车：加收标准配送费的0%</string>
+    <string name="jtgj_type_2">驾车：加收标准配送费的100%</string>
+    <string name="yjj">夜间件</string>
+    <string name="yjj_type_1">00:00-08:00加收标准配送费的30%</string>
+    <string name="yjj_type_2">22:00-23:59加收标准配送费的30%</string>
+    <string name="eltq">恶劣天气</string>
+    <string name="eltq_type_1">包含但不限于恶劣天气、节假日、订单高峰等情况</string>
+    <string name="gjf">过江费</string>
+    <string name="gjf_type_1">特殊区域加收过江费5元</string>
+
+    <!--订单状态-->
+    <string name="order_status_dsm">带上门</string>
+    <string name="order_status_dqh">待取货</string>
+    <string name="order_status_ddyc">订单异常</string>
+    <string name="order_status_ywc">已完成</string>
+</resources>

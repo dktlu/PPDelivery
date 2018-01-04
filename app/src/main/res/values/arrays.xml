@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="goodsinfo_classify">
+        <item>文件/证件</item>
+        <item>手机数码</item>
+        <item>办公/家居</item>
+        <item>美食/宵夜</item>
+        <item>蛋糕</item>
+        <item>鲜花</item>
+        <item>休闲零食</item>
+        <item>生鲜果蔬</item>
+        <item>海鲜水产</item>
+        <item>服装配饰</item>
+        <item>大件物品</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="pick_time_left">
+        <item>今天</item>
+        <item>明天</item>
+        <item>后天</item>
+    </string-array>
+    <string-array name="pick_time_middel">
+        <item>立即取货</item>
+        <item>13点</item>
+        <item>14点</item>
+        <item>15点</item>
+        <item>16点</item>
+        <item>17点</item>
+        <item>18点</item>
+    </string-array>
+    <string-array name="pick_time_right">
+        <item>15分</item>
+        <item>30分</item>
+        <item>45分</item>
+    </string-array>
+    <string-array name="recharge_price">
+        <item>500元</item>
+        <item>1000元</item>
+        <item>2000元</item>
+        <item>5000元</item>
+    </string-array>
+</resources>

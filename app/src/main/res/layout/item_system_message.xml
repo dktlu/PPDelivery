@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/background"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/x22"
+        android:textColor="@color/pricing_rules_9c"
+        android:text="2015-12-24 11:58"
+        android:background="@color/background"
+        android:paddingTop="@dimen/x30"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/x35"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:padding="@dimen/x30"
+        android:layout_marginBottom="@dimen/x10"
+        app:cardCornerRadius="@dimen/x10"
+        app:cardElevation="@dimen/x10">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/x30"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_system_message"
+                android:textColor="@color/login_gray_45"
+                android:textSize="@dimen/x28"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/tv_title"
+                android:layout_alignTop="@id/tv_title"
+                android:src="@mipmap/img_index_red_dot"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginTop="@dimen/x23"
+                android:text="很遗憾，您的自由快递人申请未通过(身份证正面照显示 不完整，请重拍)！"
+                android:textColor="@color/pricing_rules_9c"
+                android:textSize="@dimen/x26"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+

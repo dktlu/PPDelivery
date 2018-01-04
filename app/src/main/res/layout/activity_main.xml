@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/x2"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/x37"
+                android:paddingTop="@dimen/x63">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="附近暂无自由人"
+                    android:textColor="@color/index_9b"
+                    android:textSize="@dimen/x28"/>
+
+                <com.hncs.dktlh.ppdelivery.ui.custom.OverlyingRoundLayout
+                    android:id="@+id/ll_nearby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x126"
+                    android:layout_marginRight="@dimen/x126"
+                    android:layout_marginTop="@dimen/x20"
+                    android:gravity="center"
+                    android:background="@mipmap/bg_index_top"
+                    android:orientation="horizontal">
+
+                    <cn.share.jack.cygwidget.recyclerview.PtrRecyclerViewUIComponent
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        cube_ptr:ptr_duration_to_close="200"
+                        android:id="@+id/am_ptr_framelayout"
+                        android:layout_gravity="center_horizontal"
+                        cube_ptr:ptr_duration_to_close_header="700"
+                        android:visibility="gone"
+                        cube_ptr:ptr_keep_header_when_refresh="true"
+                        cube_ptr:ptr_pull_to_fresh="false"
+                        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+                        cube_ptr:ptr_resistance="1.8">
+
+                        <cn.share.jack.cygwidget.recyclerview.RecyclerViewWithEV
+                            android:id="@+id/recyclerview_uicomponent"
+                            android:overScrollMode="never"
+                            android:scrollbars="none"
+                            android:background="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </cn.share.jack.cygwidget.recyclerview.PtrRecyclerViewUIComponent>
+
+                </com.hncs.dktlh.ppdelivery.ui.custom.OverlyingRoundLayout>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/x155"
+                android:layout_marginTop="@dimen/x30"
+                android:layout_marginBottom="@dimen/x30"
+                android:layout_marginRight="@dimen/x155"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/x76">
+
+                <RadioButton
+                    android:id="@+id/rb_send"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/x30"
+                    android:button="@null"
+                    android:checked="true"
+                    android:background="@drawable/selector_left_round"
+                    android:textColor="@drawable/selector_txt_blue_white"
+                    android:gravity="center"
+                    android:text="@string/send_the_city"/>
+
+                <RadioButton
+                    android:id="@+id/rb_find"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/x30"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:background="@drawable/selector_right_round"
+                    android:textColor="@drawable/selector_txt_blue_white"
+                    android:text="@string/send_other_city"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/ll_root"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x42"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_display_pricing_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_gray_stroke"
+                    android:drawableLeft="@mipmap/ic_display_pricing_rules"
+                    android:drawablePadding="@dimen/x9"
+                    android:text="@string/display_pricing_rules"
+                    android:textColor="@color/login_gray_c8"
+                    android:padding="@dimen/x13"
+                    android:textSize="@dimen/x26"/>
+
+                <TextView
+                    android:id="@+id/tv_display_delivery_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_gray_stroke"
+                    android:drawableLeft="@mipmap/ic_display_delivery_rules"
+                    android:drawablePadding="@dimen/x9"
+                    android:padding="@dimen/x13"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:text="@string/display_delivery_rules"
+                    android:textColor="@color/login_gray_c8"
+                    android:textSize="@dimen/x26"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/x19"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/login_gray_45"
+                android:textSize="@dimen/x28"
+                android:text="约0.9公里 预计费用￥15.00"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x42"
+                android:layout_marginLeft="@dimen/x29"
+                android:layout_marginRight="@dimen/x29"
+                android:layout_marginBottom="@dimen/x40"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_increase_price"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/shape_blue_stroke_white_solid"
+                    android:text="@string/increase_price"
+                    android:textColor="@color/login_blue_1A"
+                    android:padding="@dimen/x29"
+                    android:textSize="@dimen/x30"/>
+
+                <TextView
+                    android:id="@+id/tv_place_an_order"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_stroke_blue_solid"
+                    android:gravity="center"
+                    android:padding="@dimen/x29"
+                    android:text="@string/place_an_order"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x30"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

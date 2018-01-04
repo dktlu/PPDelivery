@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/x100"
+              android:background="@color/white"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_personal"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img_index_personal"/>
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_weight="2"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/x28"
+                android:button="@null"
+                android:checked="true"
+                android:paddingBottom="@dimen/x10"
+                android:background="@drawable/login_divider_white_blue"
+                android:textColor="@drawable/login_txt_gray_blue"
+                android:text="@string/send_express"/>
+
+            <RadioButton
+                android:id="@+id/rb_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/x28"
+                android:button="@null"
+                android:layout_marginLeft="@dimen/x70"
+                android:paddingBottom="@dimen/x10"
+                android:background="@drawable/login_divider_white_blue"
+                android:textColor="@drawable/login_txt_gray_blue"
+                android:text="@string/find_express"/>
+
+        </RadioGroup>
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_msg"
+        android:layout_width="wrap_content"
+        android:paddingRight="@dimen/x24"
+        android:paddingLeft="@dimen/x24"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:src="@mipmap/img_index_msg"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/img_index_red_dot"
+            android:layout_marginBottom="-2dp"
+            android:layout_toRightOf="@id/iv_msg"
+            android:clickable="false"
+            android:layout_above="@id/iv_msg"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

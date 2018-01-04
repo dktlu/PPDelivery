@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/layout_titlebar"/>
+
+    <View
+        style="@style/divider_height_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x42"
+        android:layout_height="@dimen/x90">
+
+        <TextView
+            style="@style/ww_txt_color_gray45_size_28"
+            android:text="@string/order_no"/>
+
+        <EditText
+            android:textSize="@dimen/x28"
+            android:textColor="@color/login_gray_45"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingLeft="@dimen/x30"
+            android:gravity="center_vertical|right"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x30"
+        android:layout_height="@dimen/x90">
+
+        <TextView
+            style="@style/ww_txt_color_gray45_size_28"
+            android:text="@string/pickup_code"/>
+
+        <EditText
+            android:textSize="@dimen/x28"
+            android:textColor="@color/login_gray_45"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingLeft="@dimen/x30"
+            android:gravity="center_vertical|right"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/ww_color_white_size_30"
+        android:layout_height="@dimen/x88"
+        android:background="@drawable/shape_blue_solid"
+        android:gravity="center"
+        android:text="@string/send_message"
+        android:layout_marginBottom="@dimen/x30"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_width="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/layout_titlebar"/>
+
+    <View style="@style/divider_height_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/x30"
+        android:layout_height="@dimen/x89">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/x26"
+            android:textColor="@color/login_gray_45"
+            android:gravity="center_vertical"
+            android:text="共4题，每题25分，100分为及格哦~"
+            android:layout_height="@dimen/x88"/>
+
+        <View style="@style/divider_height_1"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/am_ptr_framelayout"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        layout="@layout/ptr_recyclerview_uicomponent"/>
+
+    <TextView
+        style="@style/ww_color_white_size_30"
+        android:layout_height="@dimen/x88"
+        android:background="@drawable/shape_blue_solid"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:layout_margin="@dimen/x30"
+        android:layout_width="match_parent"/>
+</LinearLayout>

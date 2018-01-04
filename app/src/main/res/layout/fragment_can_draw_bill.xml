@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/am_ptr_framelayout"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/ptr_recyclerview_uicomponent"/>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                android:drawableLeft="@mipmap/ic_blue_tips"
+                android:drawablePadding="@dimen/x10"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/x24"
+                android:textColor="@color/login_blue_1A"
+                android:text="@string/tips_draw_bill"
+                android:layout_height="@dimen/x70"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="@dimen/x88">
+
+                <TextView
+                    android:id="@+id/tv_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/x30"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/next"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/x40"
+                    android:paddingRight="@dimen/x40"
+                    android:background="@color/color_f85800"/>
+
+                <TextView
+                    android:id="@+id/tv_count_order"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/x30"
+                    android:textColor="@color/login_gray_45"
+                    android:text="共1单"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_count_price"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/x30"
+                    android:textColor="@color/color_f85800"
+                    android:layout_toRightOf="@id/tv_count_order"
+                    android:layout_toLeftOf="@id/tv_next"
+                    android:text="￥11.00"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

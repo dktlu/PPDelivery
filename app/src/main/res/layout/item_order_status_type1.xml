@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_height="@dimen/x360">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/x58"
+        android:layout_marginRight="@dimen/x40"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/v_top"
+            android:layout_width="@dimen/x1"
+            android:layout_height="@dimen/x50"
+            android:background="@color/my_divider"/>
+
+        <ImageView
+            android:id="@+id/iv_order_status"
+            android:layout_width="wrap_content"
+            android:src="@drawable/selector_registration"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/v_bottom"
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/my_divider"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x50"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="wrap_content"
+                android:textColor="@drawable/login_txt_gray_blue"
+                android:textSize="@dimen/x28"
+                android:text="订单发布成功"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_update_time"
+                android:layout_width="wrap_content"
+                android:textColor="@color/pricing_rules_9c"
+                android:textSize="@dimen/x24"
+                android:layout_alignParentRight="true"
+                android:text="2017-1-12 11:58"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/x28"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/riv_header"
+                android:layout_width="@dimen/x90"
+                android:src="@mipmap/ic_launcher"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/x90"/>
+
+            <LinearLayout
+                android:id="@+id/ll_phone_msg"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/ic_red_call_phone"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/x14"
+                    android:src="@mipmap/ic_blue_order_msg"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@id/ll_phone_msg"
+                android:layout_marginLeft="@dimen/x26"
+                android:layout_toRightOf="@id/riv_header"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/ww_txt_color_gray45_size_28"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x20"
+                        android:text="快递员"
+                        android:layout_marginLeft="@dimen/x6"
+                        android:paddingLeft="@dimen/x10"
+                        android:paddingRight="@dimen/x10"
+                        android:paddingTop="@dimen/x4"
+                        android:paddingBottom="@dimen/x4"
+                        android:layout_marginRight="@dimen/x6"
+                        android:background="@drawable/shape_blue_stroke_radio"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@mipmap/ic_pass_idcard"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/x22"
+                    android:textColor="@color/pricing_rules_9c"
+                    android:text="已配送订单：1914"
+                    android:layout_marginTop="@dimen/x14"
+                    android:layout_marginBottom="@dimen/x12"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/x22"
+                    android:textColor="@color/pricing_rules_9c"
+                    android:text="好评率：100%"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/x24"
+            android:text="2017-11-15 15:22:15"
+            android:textColor="@color/pricing_rules_9c"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

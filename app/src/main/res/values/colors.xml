@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gray_333">#ff333333</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="background">#f2f3f7</color>
+    <color name="personal_item_txt_color">#454545</color>
+    <color name="color_5fabf9">#5fabf9</color>
+    
+    <color name="my_divider">#e1e1e1</color>
+
+    <!--帮送订单-->
+    <color name="help_send_order_tab_txt">#454545</color>
+    <color name="help_send_order_tab_txt_selected">#1A87F6</color>
+
+    <!--登陆注册-->
+    <color name="login_gray_45">#454545</color>
+    <color name="login_gray_c8">#c8c8c8</color>
+    <color name="login_blue_1A">#1A87F6</color>
+
+    <color name="index_9b">#9b9b9b</color>
+    <color name="pricing_rules_9c">#9c9c9c</color>
+    <color name="color_f85800">#f85800</color>
+    <color name="color_fcfbf0">#fcfbf0</color>
+    <color name="color_ea542c">#ea542c</color>
+    <color name="color_b4">#b4b4b4</color>
+    <color name="color_9097a7">#9097a7</color>
+    <color name="color_f5">#f5f5f5</color>
+    <color name="color_cd77f7">#c7ddf7</color>
+    <color name="color_gray_df">#dfdfdf</color>
+    <color name="color_gray_ce">#cecece</color>
+    <color name="color_gray_ad">#adadad</color>
+</resources>

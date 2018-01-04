@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/layout_titlebar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/x90">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/x28"
+            android:textColor="@color/login_gray_45"
+            android:drawablePadding="@dimen/x20"
+            android:text="@string/submit_info"
+            android:drawableLeft="@mipmap/ic_blue_no1"/>
+
+        <TextView
+            android:id="@+id/tv_go_submit"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/x24"
+            android:paddingRight="@dimen/x24"
+            android:paddingBottom="@dimen/x12"
+            android:paddingTop="@dimen/x12"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x28"
+            android:background="@drawable/btn_login_gray_blue"
+            android:text="@string/go_submit"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginTop="@dimen/x24"
+        android:background="@color/my_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x90"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/x28"
+            android:textColor="@color/login_gray_45"
+            android:drawablePadding="@dimen/x20"
+            android:text="@string/study_online"
+            android:drawableLeft="@mipmap/ic_blue_no2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_section1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/x17"
+                android:background="@drawable/selector_gray_red"
+                android:layout_height="@dimen/x188">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/x20"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_section1"
+                        android:textSize="@dimen/x28"
+                        android:text="@string/section_1"
+                        android:textColor="@drawable/selector_txt_gray_ce_white"
+                        style="@style/ww_txt_color_white"/>
+
+                    <TextView
+                        android:id="@+id/tv_section1_title"
+                        android:textSize="@dimen/x28"
+                        android:text="@string/section1_title"
+                        android:layout_marginTop="@dimen/x15"
+                        android:textColor="@drawable/selector_txt_gray_ce_white"
+                        style="@style/ww_txt_color_white"/>
+
+                    <TextView
+                        android:id="@+id/tv_section1_status"
+                        android:textSize="@dimen/x28"
+                        android:text="@string/study"
+                        android:layout_marginTop="@dimen/x12"
+                        android:gravity="center"
+                        android:textColor="@drawable/selector_txt_white_red"
+                        android:background="@drawable/selector_gray_ce_white"
+                        android:layout_height="@dimen/x40"
+                        android:layout_width="@dimen/x98"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:src="@drawable/selector_section_1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_section2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_gray_red"
+                android:layout_marginLeft="@dimen/x17"
+                android:layout_height="@dimen/x188">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/x20"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_section2"
+                        android:textSize="@dimen/x28"
+                        android:text="@string/section_2"
+                        android:textColor="@drawable/selector_txt_gray_ce_white"
+                        style="@style/ww_txt_color_white"/>
+
+                    <TextView
+                        android:id="@+id/tv_section2_title"
+                        android:textSize="@dimen/x28"
+                        android:text="@string/section2_title"
+                        android:layout_marginTop="@dimen/x15"
+                        android:textColor="@drawable/selector_txt_gray_ce_white"
+                        style="@style/ww_txt_color_white"/>
+
+                    <TextView
+                        android:id="@+id/tv_section2_status"
+                        android:textSize="@dimen/x28"
+                        android:text="@string/study"
+                        android:layout_marginTop="@dimen/x12"
+                        android:textColor="@drawable/selector_txt_white_red"
+                        android:background="@drawable/selector_gray_ce_white"
+                        android:gravity="center"
+                        android:layout_height="@dimen/x40"
+                        android:layout_width="@dimen/x98"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:src="@drawable/selector_section_2"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/x18"
+            android:layout_marginBottom="@dimen/x32"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_section3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_gray_red"
+                android:layout_marginRight="@dimen/x17"
+                android:layout_height="@dimen/x188">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/x20"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_section3"
+                        android:textSize="@dimen/x28"
+                        android:text="@string/section_3"
+                        android:textColor="@drawable/selector_txt_gray_ce_white"
+                        style="@style/ww_txt_color_white"/>
+
+                    <TextView
+                        android:id="@+id/tv_section3_title"
+                        android:textSize="@dimen/x28"
+                        android:text="@string/section3_title"
+                        android:layout_marginTop="@dimen/x15"
+                        android:textColor="@drawable/selector_txt_gray_ce_white"
+                        style="@style/ww_txt_color_white"/>
+
+                    <TextView
+                        android:id="@+id/tv_section3_status"
+                        android:textSize="@dimen/x28"
+                        android:text="@string/study"
+                        android:layout_marginTop="@dimen/x12"
+                        android:gravity="center"
+                        android:textColor="@drawable/selector_txt_white_red"
+                        android:background="@drawable/selector_gray_ce_white"
+                        android:layout_height="@dimen/x40"
+                        android:layout_width="@dimen/x98"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:src="@drawable/selector_section_3"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/x17"
+                android:layout_height="@dimen/x188">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider_height_1"/>
+
+    <View
+        android:layout_marginTop="@dimen/x20"
+        style="@style/divider_height_1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/x28"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:textColor="@color/login_gray_45"
+        android:drawablePadding="@dimen/x20"
+        android:text="@string/pass_the_exam"
+        android:drawableLeft="@mipmap/ic_blue_no3"/>
+
+    <View
+        style="@style/divider_height_1"/>
+</LinearLayout>

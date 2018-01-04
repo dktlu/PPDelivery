@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+              xmlns:cube_ptr="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="@dimen/x276">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/x30"
+            android:textColor="@color/login_gray_45"
+            android:text="@string/evaluate_consignor"
+            android:layout_height="wrap_content"/>
+
+        <com.hncs.dktlh.ppdelivery.ui.custom.StarBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/starBar"
+            android:layout_below="@+id/display"
+            ratingbar:starEmpty="@mipmap/ic_star_unchecked"
+            ratingbar:starFill="@mipmap/ic_star_checked"
+            ratingbar:starDistance="@dimen/x3"
+            ratingbar:starCount="5"
+            ratingbar:starSize="@dimen/x50"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:drawableLeft="@mipmap/ic_evaluate_tag"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x24"
+        android:drawablePadding="@dimen/x10"
+        android:text="@string/evaluate_tag"
+        android:textSize="@dimen/x28"
+        android:textColor="@color/login_gray_45"
+        android:layout_height="wrap_content"/>
+
+    <com.hncs.dktlh.ppdelivery.ui.custom.flowlayout.AutoFlowLayout
+        android:layout_width="match_parent"
+        cube_ptr:horizontalSpace="@dimen/x18"
+        cube_ptr:verticalSpace="@dimen/x18"
+        android:layout_marginBottom="@dimen/x34"
+        android:layout_height="wrap_content">
+
+    </com.hncs.dktlh.ppdelivery.ui.custom.flowlayout.AutoFlowLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x12"
+        android:background="@color/background"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/x30"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/x80"
+            android:src="@mipmap/ic_help_send"
+            android:layout_height="@dimen/x80"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/login_gray_45"
+                    android:text="待支付"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/pricing_rules_9c"
+                android:textSize="@dimen/x26"
+                android:layout_marginTop="@dimen/x14"
+                android:text="订单编号：646413166451320054656"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/color_f85800"
+            android:textSize="@dimen/x30"
+            android:layout_gravity="center_vertical"
+            android:text="￥23.33"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/x46"
+        android:layout_marginRight="@dimen/x46"
+        android:layout_marginTop="@dimen/x18"
+        android:layout_marginBottom="@dimen/x16"
+        android:drawablePadding="@dimen/x37"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/ic_take"
+        android:text="绿地中心(湖南省长沙市开福区芙蓉中路)"
+        android:textSize="@dimen/x26"
+        android:textColor="@color/login_gray_45"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/x46"
+        android:layout_marginRight="@dimen/x46"
+        android:layout_marginBottom="@dimen/x18"
+        android:drawablePadding="@dimen/x37"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/ic_send"
+        android:text="绿地中心(湖南省长沙市开福区芙蓉中路)"
+        android:textSize="@dimen/x26"
+        android:textColor="@color/login_gray_45"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginLeft="@dimen/x30"
+        android:background="@color/my_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_height="@dimen/x90">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="￥14.30"
+            android:textColor="@color/pricing_rules_9c"
+            android:textSize="@dimen/x24"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/x28"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/show_abnormal"
+            android:background="@drawable/shape_blue_stroke_radio"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/x14"
+            android:paddingRight="@dimen/x14"
+            android:paddingTop="@dimen/x10"
+            android:paddingBottom="@dimen/x10"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/my_divider"/>
+
+</LinearLayout>
+
+
